@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+body {
+    background: #000;
+}
+
+.main {
+    max-width: 100%;
+    margin-top: 1px;
+}
+
+.main__noticia {
+    width: 100%;
+    min-height: 547px;
+    color: #fff;
+    position: relative;
+    padding: 80px 100px;
+}
+
+.main__noticia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.main__noticia h1 {
+    max-width: 442px;
+    font-size: 5.33rem;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 75px;
+}
+
+.main__noticia p {
+    font-size: 1.333rem;
+    font-weight: 300;
+    position: relative;
+    max-width: 400px;
+}
+
+.main__noticia:nth-child(1) {
+    background: url('./images/1-Tierra-construccion.webp');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.main__noticia:nth-child(2) {
+    background: url('./images/2-Medio-ambiente.webp');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.main__noticia:nth-child(3) {
+    background: url('./images/3-Investigacion-socioeconomica.webp');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.main__noticia:nth-child(4) {
+    background: url('./images/4-Salud.webp');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.main__noticia:nth-child(5) {
+    background: url('./images/5-Formulacion-de-proyectos.webp');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    .main__noticia:nth-child(1),
+    .main__noticia:nth-child(2),
+    .main__noticia:nth-child(3),
+    .main__noticia:nth-child(4),
+    .main__noticia:nth-child(5) {
+        background-size: cover;
+    }
+    .main__noticia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 13px;
+    }
+    .main__noticia {
+        padding: 10px 20px;
+    }
+    .main__noticia h1 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 4rem;
+    }
+    .main__noticia p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+    .main__noticia {
+        padding: 10px 20px;
+    }
+    .main__noticia h1 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 3.7rem;
+    }
+    .main__noticia p {
+        text-align: left;
+    }
+}
