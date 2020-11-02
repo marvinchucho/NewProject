@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Tami</title>
+    <link rel="icon" type="image/webp" href="./images/tami-logo.webp" />
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/carrito.css">
+    <link rel="stylesheet" href="./style/reutilizable/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="body">
+    <div class="contenedor" id="blur">
+        <nav>
+            <div class="logo"><img loading="lazy" src="./images/tami-logo.webp" alt="Tami"></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="./pages/acerca-de.html">Acerca de</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/donde-comprar.html">Donde Comprar</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <button id="vaciar-carrito" class="button-carrito u-full-width">VACIAR CARRITO</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=51936910425&text=Hola!%2C%20estoy%20interesado%20en%20tus%20productos." target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="espacio"></div>
+        <section class="banner">
+            <div class="banner__content">
+                <h1 class="animate__animated animate__zoomIn">PROTEGETE CON LOS DISPOSITIVOS QUE TE OFRECE TAMI</h1>
+                <h2>Tenemos una amplia variedad de productos</h2>
+                <a href="./pages/productos.html"><button class="banner__content--button">Ver productos</button></a>
+            </div>
+        </section>
+        <div>
+            <section class="slider">
+
+                <div id="izquierda" class="flecha">
+                    <a><i class="fas fa-angle-left"></i></a>
+                </div>
+
+                <div class="productos">
+                    <div id="lista-productos" class="lista-productos">
+                        <div class="productos__tarjeta">
+                            <div class="productos__tarjeta--imagen">
+                                <a onclick="ozono()">
+                                    <img loading="lazy" src="./images/ozono.webp" class="noselect">
+                                    <div class="vista-previa">
+                                        <span>Vista previa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productos__tarjeta--texto">
+                                <p>Máquina de Ozono</p>
+                                <p>S/.900,00</p>
+                            </div>
+                        </div>
+                        <div id="uv" class="productos__tarjeta">
+                            <div class="productos__tarjeta--imagen">
+                                <a onclick="esterilizador()">
+                                    <img loading="lazy" src="./images/esterilizador.webp" class="noselect">
+                                    <div class="vista-previa">
+                                        <span>Vista previa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productos__tarjeta--texto">
+                                <p>Esterilizador UV</p>
+                                <p>S/260,00</p>
+                            </div>
+                        </div>
+                        <div class="productos__tarjeta">
+                            <div class="productos__tarjeta--imagen">
+                                <a onclick="esterilizador2()">
+                                    <img loading="lazy" src="./images/estilizador2.webp" class="noselect">
+                                    <div class="vista-previa">
+                                        <span>Vista previa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productos__tarjeta--texto">
+                                <p>Esterilizador UV + Ozono</p>
+                                <p>S/.390,00</p>
+                            </div>
+                        </div>
+                        <div class="productos__tarjeta">
+                            <div class="productos__tarjeta--imagen">
+                                <a onclick="mascarilla()">
+                                    <img loading="lazy" src="./images/mascarilla.webp" class="noselect">
+                                    <div class="vista-previa">
+                                        <span>Vista previa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productos__tarjeta--texto">
+                                <p>Mascarilla Eléctrica</p>
+                                <p>S/.260,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="derecha" class="flecha">
+                    <a><i class="fas fa-angle-right"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <section class="publicidad">
+            <div class="publicidad__texto">
+                <div>
+                    <h2>Tecnología e innovación como garatía para tu salud.</h2>
+                </div>
+                <div>
+                    <a href="./pages/acerca-de.html"><button class="publicidad__texto--button">Leer más</button></a>
+                </div>
+            </div>
+            <div class="publicidad__imagen">
+                <img id="fotocambia" loading="lazy" src="./images/ozono-nobg.png" alt="maquina de ozono">
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__titulo">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contacto__formulario">
+                <form action="enviar.php">
+                    <div>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="email" name="correo" placeholder="Email">
+                    </div>
+                    <input type="text" nombre="asunto" placeholder="Asunto">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15607.184386317014!2d-77.0262549!3d-12.057546!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe94cfc4e461dcfc!2sCORPORACION%20TAMI%20S.A.C.!5e0!3m2!1ses!2spe!4v1600718082801!5m2!1ses!2spe" frameborder="0"
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="horario">
+            <h3>Horario de servicio</h3>
+            <p>Lunes - Viernes: 9 a. m. - 6 p. m.</p>
+            <p>Sábado: 10 a. m. - 2 p. m.</p>
+            <p>Domingo: cerrado</p>
+            <button class="horario__buton">Contacto</button>
+        </section>
+        <footer class="footer">
+            <p>©2020 por Tami.</p>
+        </footer>
+    </div>
+
+    <div class="ventanas__emejertes">
+        <div id="ozono" class="ventana">
+            <div class="popup">
+                <div class="popup__img">
+                    <img src="./images/ozono.webp" alt="">
+                </div>
+                <div class="popup__detalle">
+                    <a class="cerrar" onclick="ozono()"><i class="fas fa-times"></i></a>
+                    <h2>Máquina de Ozono</h2>
+                    <p>S/.900,00</p>
+                    <p>Cantidad</p>
+                    <input type="number">
+                    <button>Agregar al Carrito</button>
+                    <a class="detalles" href="./pages/productos/ozono.html">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+        <div id="esterilizador1" class="ventana">
+            <div class="popup">
+                <div class="popup__img">
+                    <img src="./images/esterilizador.webp" alt="">
+                </div>
+                <div class="popup__detalle">
+                    <a class="cerrar" onclick="esterilizador()"><i class="fas fa-times"></i></a>
+                    <h2>Esterilizador UV</h2>
+                    <p>S/.260,00</p>
+                    <p>SKU: 364215376135191</p>
+                    <p>Cantidad</p>
+                    <input type="number">
+                    <button>Agregar al Carrito</button>
+                    <a class="detalles" href="./pages/productos/esterilizador.html">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+        <div id="esterilizador2" class="ventana">
+            <div class="popup">
+                <div class="popup__img">
+                    <img src="./images/estilizador2.webp" alt="">
+                </div>
+                <div class="popup__detalle">
+                    <a class="cerrar" onclick="esterilizador2()"><i class="fas fa-times"></i></a>
+                    <h2>Esterilizador UV + Ozono</h2>
+                    <p>S/.390,00</p>
+                    <p>SKU: 364215375135191</p>
+                    <p>Cantidad</p>
+                    <input type="number">
+                    <button>Agregar al Carrito</button>
+                    <a class="detalles" href="./pages/productos/esterilizador2.html">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+        <div id="mascarilla" class="ventana">
+            <div class="popup">
+                <div class="popup__img">
+                    <img src="./images/mascarilla.webp" alt="">
+                </div>
+                <div class="popup__detalle">
+                    <a class="cerrar" onclick="mascarilla()"><i class="fas fa-times"></i></a>
+                    <h2>Mascarilla Eléctrica</h2>
+                    <p>S/.260,00</p>
+                    <p>SKU: 364115376135191</p>
+                    <p>Cantidad</p>
+                    <input type="number">
+                    <button>Agregar al Carrito</button>
+                    <a class="detalles" href="./pages/productos/mascarilla.html">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript ">
+        function ozono() {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            let ozono = document.getElementById('ozono');
+            ozono.classList.toggle('active')
+        }
+
+        function esterilizador() {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            let esterilizador1 = document.getElementById('esterilizador1');
+            esterilizador1.classList.toggle('active')
+        }
+
+        function esterilizador2() {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            let esterilizador2 = document.getElementById('esterilizador2');
+            esterilizador2.classList.toggle('active')
+        }
+
+        function mascarilla() {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            let mascarilla = document.getElementById('mascarilla');
+            mascarilla.classList.toggle('active')
+        }
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

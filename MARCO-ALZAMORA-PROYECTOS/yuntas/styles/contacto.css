@@ -1,0 +1,113 @@
+/*-----------ESTILOS GENERALES-----------*/
+
+:root {
+    --primary-blue: #0082e6;
+    --blue-transparent: #0082e686;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 110px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: #0082e686;
+}
+
+
+/*-----------CONTACTO PRINCIPAL-----------*/
+
+.main {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    margin: auto;
+    padding-top: 6%;
+}
+
+.main .container {
+    width: 100%;
+    padding: 20px;
+}
+
+.main .imagen {
+    width: 100%;
+    margin: auto;
+}
+
+.main .imagen img {
+    width: 100%;
+}
+
+.espacio {
+    height: 20px !important;
+}
+
+
+/*-----------BOTON-----------*/
+
+button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--primary-blue);
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+    transition: all 0.2s ease-out;
+    color: var(--primary-blue);
+    background: #fff;
+}
+
+.btn-landing {
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #1b9bff;
+    transition: all 0.2s ease-out;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+/*------------FOOTER------------*/
+
+.footer .titulo {
+    text-align: center;
+}
+
+@media (max-width: 952px) {
+    .main {
+        width: 90%;
+    }
+    .espacio {
+        height: 300px;
+    }
+    .main {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+}

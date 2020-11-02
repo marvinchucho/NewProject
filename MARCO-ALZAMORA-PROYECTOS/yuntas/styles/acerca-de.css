@@ -1,0 +1,128 @@
+/*-----------ESTILOS GENERALES-----------*/
+
+:root {
+    --primary-blue: #0082e6;
+    --blue-transparent: #0082e686;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--primary-blue);
+}
+
+
+/*------------PRINCIPAL------------*/
+
+.principal {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.principal .imagen {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.principal .textos {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal .imagen img {
+    width: 100%;
+}
+
+.principal .textos p {
+    padding: 0 100px;
+}
+
+.espacio {
+    height: 180px;
+}
+
+.mision-vision {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background: #ebebeb;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+
+/*------------FOOTER------------*/
+
+.footer .titulo {
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .espacio {
+        height: 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 60px;
+    }
+    .principal .textos p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .principal img {
+        width: 90%;
+        margin: auto;
+    }
+    .footer {
+        width: 100%;
+        height: 190px;
+    }
+}
+
+@media (max-width: 870px) {
+    .principal .textos p {
+        font-size: 11px;
+    }
+    .mision-vision {
+        height: 200px;
+    }
+    .mision-vision img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-wrap: wrap;
+    }
+    .principal .imagen {
+        width: 80%;
+        margin: auto;
+    }
+}

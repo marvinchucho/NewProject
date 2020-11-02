@@ -1,0 +1,438 @@
+/*-----------ESTILOS GENERALES-----------*/
+
+:root {
+    --primary-blue: #0082e6;
+    --blue-transparent: #0082e686;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: #0082e686;
+}
+
+
+/*-----------BOTON-----------*/
+
+.btn-landing {
+    margin: 20px 0;
+}
+
+.btn-landing a {
+    color: var(--primary-blue);
+}
+
+.btn-landing:hover a {
+    color: #fff;
+}
+
+.btn-form {
+    margin: 20px 0;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1b9bff;
+    transition: all 0.2s ease-out;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.espacio {
+    height: 130px;
+}
+
+
+/*-----------TITULOS-----------*/
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.titulo h1 {
+    color: #0082e6;
+    width: 800px;
+}
+
+.titulo p {
+    color: #1c8be0;
+    font-style: italic;
+}
+
+
+/*-----------TEXTOS-----------*/
+
+.textos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+}
+
+.textos h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #33a4fa;
+}
+
+.textos h4 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.textos p {
+    margin: auto;
+    font-size: 1.2rem;
+    color: #6e6e6e;
+    padding-bottom: 10px;
+}
+
+
+/*-----------SLIDER - SUPERIOR-----------*/
+
+.container-slider {
+    margin-bottom: 100px;
+}
+
+.slider-superior {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-superior ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+
+.slider-superior ul:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.slider-superior li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.slider-superior img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-----------TARJETAS-----------*/
+
+.container-card {
+    width: 73%;
+    margin: 27px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 450px;
+    grid-gap: 2px;
+    grid-template-areas: "area-1 area-1 area-1" "holograma asistente machine";
+}
+
+.container-card .card-1 {
+    background: url(../images/holograma/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: area-1;
+    grid-column-end: area-1;
+    height: 300px;
+}
+
+.container-card .card-2 {
+    grid-column-start: holograma;
+    background-color: #f1faee;
+    color: rgb(68, 68, 68);
+}
+
+.container-card .card-3 {
+    grid-column-start: asistente;
+    background-color: #a8dadc;
+    color: #fff;
+}
+
+.container-card .card-4 {
+    grid-column-start: machine;
+    background-color: #457b9d;
+    color: #fff;
+}
+
+.container-card .container-img {
+    width: 100%;
+    height: 80%;
+}
+
+.container-card .container-img .imagen-card {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-card h4 {
+    font-size: 25px;
+}
+
+.container-card .container-text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/*-----------SLIDER - INFERIOR-----------*/
+
+.container-slider-inferior {
+    margin-bottom: 100px;
+}
+
+.slider-inferior {
+    width: 73%;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-inferior ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+
+.slider-inferior ul:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.slider-inferior li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-inferior img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -15%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/*-----------GALLERY-----------*/
+
+.container-gallery {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.container-gallery .img {
+    flex-grow: 1;
+    flex-basis: 250px;
+    width: 300px;
+    margin: 5px;
+}
+
+.container-gallery .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
+}
+
+
+/*-----------UBICACION-----------*/
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe {
+    width: 50%;
+    margin: auto;
+}
+
+
+/*-----------RESPONSIVE-----------*/
+
+@media (max-width: 1000px) {
+    .ultimo {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container-gallery {
+        width: 90%;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .titulo h1 {
+        width: 500px;
+    }
+    .slider-inferior {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .mapa {
+        width: 70%;
+        margin: auto;
+    }
+    .mapa iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 858px) {
+    .container-slider-inferior {
+        height: 300px;
+    }
+    .card {
+        height: 320px;
+    }
+    .container-text p {
+        font-size: 14px;
+    }
+    .container-text h4 {
+        font-size: 20px;
+    }
+    .container-card {
+        grid-template-rows: 1fr 320px;
+    }
+    .container-card .card-1 {
+        height: 200px;
+    }
+    .container-card .container-img .imagen-card {
+        height: 200px;
+    }
+    .textos h2 {
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    .textos p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .container-slider {
+        margin-bottom: 0;
+    }
+    .slider-superior {
+        width: 100%;
+        height: 300px;
+    }
+    .container-gallery {
+        width: 90%;
+    }
+    .textos {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-gallery {
+        width: 90%;
+    }
+    .titulo h1 {
+        width: 400px;
+        font-size: 2.5rem;
+    }
+    .textos h2 {
+        font-size: 2rem;
+    }
+    .textos h4 {
+        font-size: 1.3rem;
+    }
+    .textos {
+        width: 300px;
+    }
+    .textos p {
+        font-size: .8rem;
+    }
+    .ultimo {
+        width: 100%;
+    }
+}

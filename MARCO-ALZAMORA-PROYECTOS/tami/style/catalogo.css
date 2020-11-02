@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+:root {
+    --color-principal: #46a2a1;
+}
+
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+}
+
+nav .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--color-principal);
+}
+
+nav .menu-btn i {
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.icono-nav {
+    font-size: 30px;
+    margin: 0 10px;
+    color: black;
+}
+
+
+/*-----------BOTON DE WHATSAPP-----------*/
+
+.btn-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: 0.7s;
+}
+
+.btn-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+
+/*-----------MAIN-----------*/
+
+main .producto__descripcion--detalle .fas {
+    color: #ffc700;
+    font-size: 30px;
+}
+
+.main {
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.main .navegacion {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__siguiente {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__siguiente a {
+    display: flex;
+    color: #000;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.navegacion__siguiente a:hover {
+    color: #818181;
+    transition: 0.3s ease;
+}
+
+.navegacion__siguiente a p {
+    margin: 0 10px;
+}
+
+.navegacion__siguiente--derecha .producto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.producto__imagen .primero {
+    max-width: 50%;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.producto__imagen .primero:hover {
+    transform: scale(1.1);
+}
+
+.producto__imagen .segundo {
+    width: 80px;
+    border: 1px solid #aaaaaa;
+}
+
+.producto__descripcion {
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    transition: 0.4s ease;
+}
+
+.producto__descripcion p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.producto__descripcion h2,
+.producto__descripcion h3 {
+    font-size: 1.46rem;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.producto__descripcion--detalle hr {
+    margin: 40px 0;
+}
+
+.producto__descripcion--detalle {
+    width: 70%;
+    padding: 50px;
+}
+
+.producto__descripcion--detalle .descripcion {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.producto__descripcion--detalle .beneficio {
+    width: 100%;
+}
+
+.producto__descripcion--detalle .beneficio__descripcion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto__descripcion--detalle .beneficio__descripcion p {
+    margin: 10px 0;
+}
+
+.beneficio__descripcion--izquierda,
+.beneficio__descripcion--derecha {
+    width: 50%;
+}
+
+.producto__descripcion--precio {
+    width: 30%;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.producto__descripcion--precio input {
+    width: 50px;
+    padding: 10px 10px;
+}
+
+.producto__descripcion--precio button {
+    padding: 15px 20px;
+    background-color: var(--color-principal);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.6s ease;
+    font-size: 1rem;
+}
+
+.producto__descripcion--precio button:hover {
+    background: #4fb8b6;
+    transition: 0.6s ease;
+}
+
+
+/*------------------------------------------------------------*/
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    display: none;
+}
+
+.acc {
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.acc li {
+    list-style: none;
+    padding: 0;
+}
+
+.acc_ctrl {
+    background: none;
+    border: none;
+    border-bottom: solid 1px #d3d3d3;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 2em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.acc_ctrl:before {
+    background: #44596b;
+    content: "";
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+}
+
+.acc_ctrl:after {
+    background: #44596b;
+    content: "";
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 14px;
+}
+
+.acc_ctrl.active:before {
+    transform: rotate(0deg);
+}
+
+.acc_ctrl.active h2,
+.acc_ctrl:focus h2 {
+    position: relative;
+}
+
+.acc_panel {
+    background: transparent;
+    display: none;
+    overflow: hidden;
+}
+
+.acc_panel p {
+    margin-bottom: 5px;
+}
+
+
+/*-----------FOOTER-----------*/
+
+.footer {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+
+/*-----RESPONSIVE----*/
+
+@media (max-width: 1500px) {
+    .main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .producto__imagen .segundo {
+        display: none;
+    }
+    .producto__imagen .primero {
+        margin: 0;
+    }
+    .main {
+        width: 90%;
+    }
+    .container {
+        display: block;
+    }
+    .beneficio,
+    .garantia,
+    .politica,
+    hr {
+        display: none;
+    }
+    .producto__descripcion {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        padding: 30px;
+    }
+    .producto__descripcion--precio,
+    .producto__descripcion--detalle {
+        width: 100%;
+        padding: 10px;
+    }
+    nav {
+        height: 80px;
+        z-index: 7;
+    }
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #fff;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        color: var(--color-principal);
+        transition: 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: rgb(70, 162, 161, 0.5);
+    }
+}
+
+@media (max-width: 600px) {
+    .main .navegacion {
+        font-size: 12px;
+    }
+    .navegacion__siguiente {
+        justify-content: flex-end;
+    }
+    .producto__descripcion--precio,
+    .producto__descripcion--detalle {
+        width: 100%;
+        padding: 1px;
+    }
+    .producto__imagen .segundo {
+        display: none;
+    }
+    .producto__imagen .primero {
+        max-width: 70%;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+    .beneficio__descripcion--izquierda,
+    .beneficio__descripcion--derecha {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .producto__descripcion--detalle .beneficio__descripcion {
+        flex-direction: column;
+    }
+}

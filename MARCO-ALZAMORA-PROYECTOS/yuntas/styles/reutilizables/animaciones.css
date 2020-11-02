@@ -1,0 +1,16 @@
+/*-----------ANIMACIONES-----------*/
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .mostrarArriba {
+    animation: mostrarDesdeArriba 1s;
+  }
+  @keyframes mostrarDesdeArriba {
+    0% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

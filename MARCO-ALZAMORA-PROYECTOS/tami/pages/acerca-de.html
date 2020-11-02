@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de | Tami</title>
+    <link rel="icon" type="image/webp" href="../images/tami-logo.webp" />
+    <link rel="stylesheet" href="../style/acerca-de.css">
+    <link rel="stylesheet" href="../style/reutilizable/navbar.css">
+    <link rel="stylesheet" href="../style/carrito.css">
+</head>
+
+<body class="body">
+    <div class="contenedor">
+        <nav>
+            <div class="logo"><img loading="lazy" src="../images/tami-logo.webp" alt="Tami"></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="active" href="#">Acerca de</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./donde-comprar.html">Donde Comprar</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <button id="vaciar-carrito" class="button-carrito u-full-width">VACIAR CARRITO</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=51936910425&text=Hola!%2C%20estoy%20interesado%20en%20tus%20productos." target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="espacio"></div>
+        <main class="main">
+            <div class="main__contenedor">
+                <div class="main__contenedor--imagen-arriba">
+                </div>
+                <div class="main__contenedor--texto">
+                    <div class="titulo">
+                        <h2>Nosotros</h2>
+                    </div>
+                    <div id="descripcion" class="descripcion">
+                        <div class="descripcion__mision">
+                            <h4>MISION</h4>
+                            <p>
+                                Somos una empresa que busca sostenerse e innovar en el tiempo dedicada a la comercialización productos médicos y brindando servicios de calidad con un personal competente que pueda generar un valor agregado y confianza hacia los clientes al momento de
+                                comprar sus productos médicos.
+                            </p>
+                        </div>
+                        <div class="descripcion__vision">
+                            <h4>VISIÓN</h4>
+                            <p>
+                                Ser una empresa líder a nivel nacional con una amplia gama de productos y servicios a precios competentes en el mercado laboral, siendo una organización efectiva, orientada al cliente satisfaciendo sus necesidades que permitirá el reconocimiento de la
+                                empresa en el sector salud.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="direccion">
+                        <a class="active" id="derecha"><i class="fas fa-arrow-left"></i>Mision</a>
+                        <a id="izquierda">Visión<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="main__contenedor--imagen">
+                </div>
+            </div>
+        </main>
+        <section class="valores">
+            <div class="valores__imagen">
+            </div>
+            <div class="valores__texto">
+                <h2>Valores</h2>
+                <ul>
+                    <li>Respeto, con nuestros empleados, clientes y la sociedad.</li>
+                    <li>Valoración de servicio, nuestra característica principal.</li>
+                    <li>Transparencia, en nuestras acciones.</li>
+                    <li>Compromiso, con ofrecer la máxima calidad en nuestros productos. </li>
+                    <li>Responsabilidad, con nosotros, ustedes y el medio ambiente.</li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>©2020 por Tami.</p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="../js/nosotros.js"></script>
+
+</body>
+
+</html>

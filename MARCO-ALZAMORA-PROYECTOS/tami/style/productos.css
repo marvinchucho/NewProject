@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*-----------ESTILOS GENERALES-----------*/
+
+:root {
+    --color-principal: #46a2a1;
+}
+
+:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+html {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*-----------BOTON DE WHATSAPP-----------*/
+
+.btn-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: .7s;
+}
+
+.btn-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+
+/*-----------CONTENIDO PRINCIPAL-----------*/
+
+.main {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.producto__card {
+    width: 234px;
+    height: 310px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.producto__card--imagen {
+    width: 224px;
+    height: 224px;
+    float: left;
+    position: relative;
+}
+
+.producto__card--imagen span {
+    position: absolute;
+    padding: 10px;
+    background: var(--color-principal);
+    color: #fff;
+    z-index: 1;
+}
+
+.producto__card--imagen img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity .6s ease-in-out;
+}
+
+.producto__card--imagen img:hover {
+    opacity: 0;
+}
+
+.producto__card--text {
+    width: 100%;
+    height: 76px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.producto__card--text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.espacio {
+    height: 100px;
+}
+
+
+/*-----------FOOTER-----------*/
+
+.footer {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+
+/*-----------RESPONSIVE-----------*/
+
+@media (max-width: 920px) {
+    .producto__lista--tarjeta .tarjeta__img img {
+        width: 280px;
+    }
+}

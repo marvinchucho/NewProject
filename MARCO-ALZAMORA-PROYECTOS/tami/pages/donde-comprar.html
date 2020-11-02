@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde comprar | Tami</title>
+    <link rel="icon" type="image/webp" href="../images/tami-logo.webp" />
+    <link rel="stylesheet" href="../style/donde-comprar.css">
+    <link rel="stylesheet" href="../style/reutilizable/navbar.css">
+    <link rel="stylesheet" href="../style/carrito.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav>
+            <div class="logo"><img loading="lazy" src="../images/tami-logo.webp" alt="Tami"></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./acerca-de.html">Acerca de</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a class="active" href="./donde-comprar.html">Donde Comprar</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <button id="vaciar-carrito" class="button-carrito u-full-width">VACIAR CARRITO</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=51936910425&text=Hola!%2C%20estoy%20interesado%20en%20tus%20productos." target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="espacio"></div>
+        <main class="main">
+            <div class="politica">
+                <div class="politica__imagen">
+                    <img src="../images/jovenes.webp" alt="">
+                </div>
+                <div class="politica__texto">
+                    <h2>Política de envio</h2>
+                    <h3>Envíos a Lima y Provincias</h3>
+
+                    <p>1. Los distritos de Santa anita, Centro de Lima, Lince, Rímac y La Victoria: <b>Precio de envío 5 soles</b></p>
+                    <p>2. Los distritos de Ancón, Carabayllo, Santa Rosa, Ventanilla, Callao, Puente Piedra, Comas, Los Olivos, Independecia, San Martin de Porres, San Juan de Lurigancho, El Agustino, Lurigancho, Ate, Chaclacayo, Cieneguilla, Pachacamác,
+                        Lurin, Punta Hermosa, Punta Negra, Ban Bartolo, Santa Maria del Mar, Pucusana, Breña, San Borja, Surco, Barranco, Miraflores, San Isidro, San Luis, La Molina Surquillo, Magdalena del Mar, Pueblo Libre, San Miguel, La Perla, La
+                        Punta, Bellavista, Carmen de la Legua: <b>Precio de envío 10 soles</b></p>
+                    <h3>Provincias:</h3>
+                    <p>El cliente elegirá la empresa por la cual desea el envío y pagará lo que la empresa cotice al momento de la entrega.</p>
+                    <div>
+                        <button class="politica__texto--boton">Visítanos hoy mismo</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>©2020 por Tami.</p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
