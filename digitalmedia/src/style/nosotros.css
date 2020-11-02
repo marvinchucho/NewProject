@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --gris-claro: #ecebebbd;
+  --gris-oscuro: #d3d2d2bd;
+  --morado-claro: #660066;
+  --morado: #4D0D6E;
+  --azul: #4521D1;
+  --azul-claro: #0066CC;
+  --instagram: #8a3ab9;
+  --twitter: #00acee;
+  --linkedin: #0072b1;
+  --altura: calc(100vh - 80px);
+}
+body {
+  height: 100%;
+}
+.contenedor {
+  width: 100%;
+}
+.main {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.nosotros {
+  background-color: #7fb2e5;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+/*Efectos de titulo de nosotros*/
+.nosotros span {
+  color: #ffff;
+  display: block;
+  font-size: 49px;
+  padding: 0px 10px;
+  font-weight: bold;
+  margin-left: 23%;
+  animation-name: deslizarNosotros;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deslizarNosotros {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Fin de efectos de titulo de nosotros*/
+
+.descripcion {
+  width: 50%;
+  margin: 0 auto;
+
+  
+}
+
+/*Efecto de descripcion*/
+ .descripcion-cuerpo p {
+  font-weight:bold;
+  line-height:  1.8;;
+  text-align: justify;
+  color:#4d0d6e;
+  font-size: 25px;
+  animation-name: revelarDescripcion;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes revelarDescripcion {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Fin de efecto de descripcion*/
+
+/* Efecto del grafico */
+.grafico {
+  width: 100%;
+  text-align: center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes opacityImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.grafico img {
+  width: 70%;
+  animation-name: deslizarlogo;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+
+}
+
+@keyframes deslizalogo {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fin del efecto del grafico */
+
+.estrategia{
+  max-width: 700px;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.estrategia-cuerpo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+/*Efecto del estrategia-cuerpo*/
+#one {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 500px;
+  float: left;
+  background: #7fb2e5;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.efectoEstrategia{
+  animation-name: revelarEstrategia;
+}
+
+@keyframes revelarEstrategia {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*Fin del efecto del estrategia-cuerpo*/
+
+.estrategia-titulo{
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.estrategia-titulo h3 {
+  font-weight:bold;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight:bold;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+/*Efecto del estrategia-titulo*/
+.efectoTitulo{
+  animation-name: revelarTitulo;
+}
+
+@keyframes revelarTitulo {
+  0% {
+    opacity: 1;
+    transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*Fin del efecto del estrategia-titulo*/
+
+.estrategia-lista li {
+  font-weight:bold;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/*Efecto de estrategia-lista*/
+.estrategia-lista{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.efectoLista{
+  animation-name: revelarLista;
+}
+
+@keyframes revelarLista{
+  0% {
+    opacity: 1;
+    transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*Fin del efecto de estrategia-lista*/
+
+/*Voltear horizontalmente la imagen*/
+.estrategia-cuerpo img {
+  width: 186px;
+  height: 400px;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/*Efecto de la  imagen de estrategia*/
+#two {
+  float: left;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.efectoImagen {
+  animation-name: deslizarImagen;
+}
+
+@keyframes deslizarImagen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Fin del efecto de la  imagen de estrategia*/
+
+.objetivo {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.objetivo-cuerpo p {
+  font-weight:bold;
+  line-height:  1.8;;
+  text-align: justify;
+  color:#4d0d6e;
+  font-size: 24px;
+  animation-name: revelarObjetivo;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes revelarObjetivo {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn-whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: .7s;
+}
+
+.btn-whatsapp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+@media (max-width: 1300px){
+  .descripcion{
+    width: 80%;
+  }
+  .objetivo {
+    width: 80%;
+  }
+  .vision {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .descripcion{
+    width: 80%;
+  }
+  .objetivo {
+    width: 80%;
+  }
+  .vision {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .descripcion {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  .objetivo {
+    width: 80%;
+  }
+  .grafico img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .nosotros {
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros span {
+    font-size: 49px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .objetivo {
+    width: 80%;
+  }
+  .grafico img{
+    width: 100%;
+  }
+  .descripcion-cuerpo p {
+    font-size: 18px;
+  }
+}
+
