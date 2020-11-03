@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 15px;
+}
+
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --gris-claro: #ecebebbd;
+    --gris-oscuro: #d3d2d2bd;
+    --morado-claro: #660066;
+    --morado: #4D0D6E;
+    --azul: #4521D1;
+    --azul-claro: #0066CC;
+    --instagram: #8a3ab9;
+    --twitter: #00acee;
+    --linkedin: #0072b1;
+    --altura: calc(100vh - 80px);
+}
+
+
+/*-----------BOTON DE WHATSAPP-----------*/
+
+.btn-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: .7s;
+}
+
+.btn-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+main .imagen {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+main .imagen img {
+    width: 700px;
+    transition: 0.4s;
+}
+
+main .imagen img:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+main .texto {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+}
+
+main .texto h2 {
+    margin: 30px 0 10px 0;
+}
+
+main .texto p {
+    font-weight: 300;
+}
+
+main button {
+    width: 150px;
+    padding: 15px;
+    background: var(--azul-claro);
+    color: var(--blanco);
+    border: none;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease;
+    -webkit-animation: boton 2s ease;
+    animation: boton 2s ease;
+}
+
+@-webkit-keyframes boton {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes boton {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+main button:hover {
+    background: var(--morado);
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+    main .imagen img {
+        width: 450px;
+    }
+    main {
+        width: 90%;
+    }
+    main h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    main .imagen img {
+        width: 350px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+}
