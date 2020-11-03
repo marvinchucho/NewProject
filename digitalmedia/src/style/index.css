@@ -348,12 +348,13 @@ html {
     position: relative;
     overflow: hidden;
     margin: 20px 0;
+    background: #ccc;
 }
 
 .emprendimiento__slider--slider {
     width: 2000px;
     height: 220px;
-    background: url('../images/slider.jpg');
+    background: url('../images/slider-bg.png');
     background-size: 100% 100%;
     -webkit-animation: slider 10s infinite linear;
     animation: slider 10s infinite linear;
@@ -373,13 +374,15 @@ html {
 
 .emprendimiento__tarjetas {
     background: var(--gris-claro);
-    min-height: var(--altura);
+    min-height: 500px;
 }
 
 .empredimiento__tarjetas--titulo {
+    width: 100%;
+    font-size: 30px;
     padding: 30px 0;
-    width: 50%;
-    margin: auto;
+    text-align: center;
+    line-height: 35px;
 }
 
 .empredimiento__tarjetas--titulo h3 {
@@ -398,17 +401,42 @@ html {
 }
 
 .emprendimiento__tarjetas--tarjeta div {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     margin: 5px 10px;
     background: var(--gris-oscuro);
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .emprendimiento__tarjetas--tarjeta div img {
     width: 100%;
     height: 50%;
+}
+
+.emprendimiento__tarjetas--tarjeta div h4 {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.emprendimiento__tarjetas--tarjeta div button {
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    color: var(--blanco);
+    background: var(--azul-claro);
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.emprendimiento__tarjetas--tarjeta div button:hover {
+    background: var(--morado);
 }
 
 
